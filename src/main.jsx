@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import GembaWalk from '../gemba-mobile.jsx'
+import GembaApp from '../gemba-mobile.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GembaWalk />
+          <GembaApp />
   </React.StrictMode>
 )
