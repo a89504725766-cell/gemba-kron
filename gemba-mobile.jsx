@@ -12,14 +12,14 @@ const C = {
 // ─── STORAGE (localStorage) ────────────────────────────────────────────────
 const STORAGE_KEY = "gemba_kron_v1";
 
-function loadData(): Record<string, any> {
+function loadData() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     return raw ? JSON.parse(raw) : {};
   } catch { return {}; }
 }
 
-function saveData(d: Record<string, any>): void {
+function saveData(d) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(d));
   } catch {}
